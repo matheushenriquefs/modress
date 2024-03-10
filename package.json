@@ -1,17 +1,22 @@
 {
   "name": "ress",
   "description": "A modern CSS reset",
-  "version": "5.0.2",
-  "author": "Filipe Linhares",
+  "version": "1.0.0",
+  "author": "Matheus Henrique",
   "bugs": {
-    "url": "https://github.com/filipelinhares/ress/issues"
+    "url": "https://github.com/matheushenriquefs/ress/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.18",
     "cssnano": "^6.1.0",
+    "postcss": "^8.4.35",
     "postcss-cli": "^11.0.0",
-    "stylelint": "^16.2.1"
+    "postcss-import": "^16.0.1",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-prettier": "^5.0.0"
   },
-  "homepage": "https://github.com/filipelinhares/ress",
+  "homepage": "https://github.com/matheushenriquefs/ress",
   "keywords": [
     "css",
     "reset"
@@ -20,13 +25,14 @@
   "main": "dist/ress.min.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/filipelinhares/ress.git"
+    "url": "https://github.com/matheushenriquefs/ress.git"
   },
   "scripts": {
-    "compile": "postcss ress.css --no-map -u cssnano -o dist/ress.min.css",
-    "shadow": "postcss ./src/*.css --no-map -u cssnano --dir ./shadow",
-    "inputs": "postcss ./src/input/*.css --no-map -u cssnano --dir ./shadow/input",
-    "compile:shadow": "npm run shadow && npm run inputs",
-    "test": "stylelint ress.css ./src/"
+    "build-css": "postcss src/ress.css -o dist/ress.min.css --no-map -u cssnano postcss-import autoprefixer",
+    "build-shadow-css": "postcss src/*.css --dir dist/shadow --no-map -u cssnano autoprefixer",
+    "build": "npm run build-css && npm run build-shadow-css",
+    "lint": "stylelint src/*.css --cache --ip dist/*.css",
+    "format": "prettier -w src/",
+    "lint-format": "npm run lint -- --fix && npm run format"
   }
 }
