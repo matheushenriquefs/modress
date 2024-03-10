@@ -24,6 +24,9 @@
   },
   "scripts": {
     "compile": "postcss ress.css --no-map -u cssnano -o dist/ress.min.css",
-    "test": "stylelint ress.css"
+    "shadow": "postcss ./src/*.css --no-map -u cssnano --dir ./shadow",
+    "inputs": "postcss ./src/input/*.css --no-map -u cssnano --dir ./shadow/input",
+    "compile:shadow": "npm run shadow && npm run inputs",
+    "test": "stylelint ress.css ./src/"
   }
 }

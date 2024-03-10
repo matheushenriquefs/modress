@@ -33,6 +33,17 @@ yarn add ress
 13. Style `select` like a standard input.
 14. Style `cursor` by aria attributes.
 
+## Shadow DOM reset
+Inspired by [JIAYI HU's blog post](https://blog.jiayihu.net/css-resets-in-shadow-dom/) about resets in shadow DOM, now you can import just what you want from ress.
+
+### Using
+
+**With `postcss-import` for example:**
+```
+@import `ress/shadow/a;
+@import `ress/shadow/button;
+```
+
 ## Crossbrowser
 
 **ress** uses [Normalize.css](https://github.com/necolas/normalize.css) under the hood with some customizations to apply a solid base to start your stylesheet.
