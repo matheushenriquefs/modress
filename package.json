@@ -7,9 +7,9 @@
     "url": "https://github.com/filipelinhares/ress/issues"
   },
   "devDependencies": {
-    "cssnano": "^5.1.1",
-    "postcss-cli": "^9.1.0",
-    "stylelint": "^14.5.3"
+    "cssnano": "^6.1.0",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^16.2.1"
   },
   "homepage": "https://github.com/filipelinhares/ress",
   "keywords": [
