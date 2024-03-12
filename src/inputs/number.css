@@ -1,0 +1,5 @@
+/* Correct the cursor style of increment and decrement buttons in Chrome */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}

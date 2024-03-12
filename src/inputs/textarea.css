@@ -1,0 +1,13 @@
+/* 1. Specify textarea resizability */
+/* 2. Specify font inheritance of form elements */
+textarea {
+  overflow: auto; /* Internet Explorer 11+ */
+  resize: vertical; /* 1 */
+  font: inherit; /* 2 */
+  background-color: transparent;
+  border-style: none;
+}
+
+textarea:focus {
+  outline-width: 0;
+}

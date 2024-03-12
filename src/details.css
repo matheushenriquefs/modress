@@ -1,0 +1,4 @@
+/* Render the `main` element consistently in IE */
+details {
+  display: block;
+}

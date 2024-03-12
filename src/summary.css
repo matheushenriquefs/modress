@@ -1,3 +1,4 @@
+/* Add the correct display in all browsers */
 summary {
-  display: list-item; /* Add the correct display in all browsers */
+  display: list-item;
 }

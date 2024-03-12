@@ -1,0 +1,4 @@
+/* Add the correct display in IE */
+[hidden] {
+  display: none;
+}

@@ -1,0 +1,4 @@
+/* Specify font inheritance of form elements */
+optgroup {
+  font: inherit;
+}

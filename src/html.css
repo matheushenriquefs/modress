@@ -1,0 +1,13 @@
+/* 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+/* 2. Prevent adjustments of font size after orientation changes in iOS */
+/* 3. Correct the line height in all browsers */
+html {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji"; /* 1 */
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%; /* 2 */
+  word-break: normal;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  line-height: 1.15; /* 3 */
+}

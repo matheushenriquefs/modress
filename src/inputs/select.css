@@ -1,0 +1,23 @@
+/* Style select like a standard input */
+select {
+  font: inherit;
+  text-transform: none; /* Firefox 40+, Internet Explorer 11- */
+  background-color: transparent;
+  border-style: none;
+  -moz-appearance: none; /* Firefox 36+ */
+  -webkit-appearance: none; /* Chrome 41+ */
+}
+
+select:focus {
+  outline-width: 0;
+}
+
+/* Internet Explorer 11+ */
+select::-ms-expand {
+  display: none;
+}
+
+/* Internet Explorer 11+ */
+select::-ms-value {
+  color: currentColor;
+}

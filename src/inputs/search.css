@@ -1,0 +1,12 @@
+/* Correct the odd appearance in Chrome and Safari */
+/* Correct the outline style in Safari */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/*Remove the inner padding in Chrome and Safari on macOS */
+::-webkit-search-cancel-button,
+::-webkit-search-decoration {
+  -webkit-appearance: none; /* Safari 8 */
+}

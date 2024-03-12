@@ -2,6 +2,7 @@ svg:not([fill]) {
   fill: currentColor;
 }
 
+/* Internet Explorer 11- */
 svg:not(:root) {
-  overflow: hidden; /* Internet Explorer 11- */
+  overflow: hidden;
 }

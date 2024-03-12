@@ -1,0 +1,8 @@
+/* 1. Show the overflow in Edge and IE */
+/* 2. Add the correct box sizing in Firefox */
+/* 3. Correct border color in Firefox */
+hr {
+  overflow: visible; /* 1 */
+  height: 0; /* 2 */
+  color: inherit; /* 3 */
+}

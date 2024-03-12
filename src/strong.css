@@ -1,0 +1,4 @@
+/* Add the correct font weight in Chrome, Edge, and Safari */
+strong {
+  font-weight: bolder;
+}

@@ -1,0 +1,4 @@
+/* Set font-size to 80% in `small` elements */
+small {
+  font-size: 80%;
+}

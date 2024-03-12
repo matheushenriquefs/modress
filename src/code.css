@@ -1,10 +1,10 @@
+/* 1. Improve consistency of default fonts in all browsers */
+/* 2. Correct the odd `em` font sizing in all browsers */
 code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace; /* Specify the font family of code elements */
-}
-
-pre {
-  font-size: 1em; /* Correct the odd `em` font sizing in all browsers. */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
