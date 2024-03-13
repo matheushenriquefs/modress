@@ -13,7 +13,7 @@ For more details, check out:
 1.1 Apply `box-sizing: border-box;`, resets padding, and margin.  
 1.2 Improve font consistency.  
 1.3 Form styles standardization.  
-3. Lightweight: modress.min.css is only 1kb gzipped.
+3. Lightweight: `modress.min.css` is only 1kb gzipped.
 4. Fully modular: Take what you want.
 5. No bundler required: Usable via CDN.
 
