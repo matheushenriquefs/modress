@@ -12,9 +12,9 @@
   "engines": {
     "node": ">=19"
   },
-  "homepage": "https://github.com/matheushenriquefs/ress",
+  "homepage": "https://github.com/matheushenriquefs/modress",
   "bugs": {
-    "url": "https://github.com/matheushenriquefs/ress/issues"
+    "url": "https://github.com/matheushenriquefs/modress/issues"
   },
   "license": "MIT",
   "author": "Matheus Henrique <matheus.henrique1021@gmail.com> (https://github.com/matheushenriquefs)",
@@ -24,7 +24,7 @@
   "main": "dist/modress.min.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matheushenriquefs/ress.git"
+    "url": "https://github.com/matheushenriquefs/modress.git"
   },
   "scripts": {
     "build-css": "postcss $npm_config_source $npm_config_dist --no-map -u cssnano postcss-import autoprefixer",
