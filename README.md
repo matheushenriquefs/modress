@@ -9,13 +9,13 @@ For more details, check out:
 
 ## Features
 
-1. Consistent: Ensures uniform styles across various browsers.
-    1.1 Apply `box-sizing: border-box;`, resets padding, and margin.
-    1.1 Improve font consistency.
-    1.1 Form styles standardization.
+1. Consistent: Ensures uniform styles across various browsers.  
+1.1 Apply `box-sizing: border-box;`, resets padding, and margin.  
+1.2 Improve font consistency.  
+1.3 Form styles standardization.  
 3. Lightweight: Only 1kb (min+gzip).
-3. Fully modular: Take what you want.
-4. No bundler required: Usable via CDN.
+4. Fully modular: Take what you want.
+5. No bundler required: Usable via CDN.
 
 ## Install
 
