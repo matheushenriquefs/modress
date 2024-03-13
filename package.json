@@ -21,7 +21,7 @@
   "files": [
     "dist/**/*.css"
   ],
-  "main": "dist/ress.min.css",
+  "main": "dist/modress.min.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/matheushenriquefs/ress.git"
