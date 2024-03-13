@@ -1,16 +1,17 @@
 {
   "name": "modress",
   "version": "1.0.0",
-  "description": "A small modular CSS reset.",
+  "description": "A lightweight modular CSS reset.",
   "keywords": [
     "css",
     "reset",
     "normalize",
+    "lightweight",
     "modular"
   ],
   "engines": {
-		"node": ">=19"
-	},
+    "node": ">=19"
+  },
   "homepage": "https://github.com/matheushenriquefs/ress",
   "bugs": {
     "url": "https://github.com/matheushenriquefs/ress/issues"
@@ -18,8 +19,7 @@
   "license": "MIT",
   "author": "Matheus Henrique <matheus.henrique1021@gmail.com> (https://github.com/matheushenriquefs)",
   "files": [
-    "dist/ress.min.css",
-    "dist/shadow/**/*.css"
+    "dist/**/*.css"
   ],
   "main": "dist/ress.min.css",
   "repository": {
@@ -27,9 +27,11 @@
     "url": "https://github.com/matheushenriquefs/ress.git"
   },
   "scripts": {
-    "build-css": "postcss src/ress.css -o dist/ress.min.css --no-map -u cssnano postcss-import autoprefixer",
-    "build-shadow-css": "postcss src/*.css --dir dist/shadow --no-map -u cssnano autoprefixer",
-    "build": "npm run build-css && npm run build-shadow-css",
+    "build-css": "postcss $npm_config_source $npm_config_dist --no-map -u cssnano postcss-import autoprefixer",
+    "build-main-css": "npm run build-css --source=src/*.css --dist=\"--dir dist\"",
+    "build-main-css-inputs": "npm run build-css --source=src/inputs/*.css --dist=\"--dir dist/inputs\"",
+    "build": "npm run build-main-css && npm run build-main-css-inputs && npm run post-build",
+    "post-build": "mv dist/modress.css dist/modress.min.css",
     "lint": "stylelint src/*.css --cache --ip dist/*.css",
     "format": "prettier -w src/",
     "lint-format": "npm run lint -- --fix && npm run format"
