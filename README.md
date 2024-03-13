@@ -1,52 +1,27 @@
-![A brunch and the ress name](https://i.imgur.com/NHz9ef3.png)
+# Modress 👢
 
-Modern CSS reset
+A lightweight modular CSS reset designed to support older browsers and seamlessly integrate with Web Components, eliminating code duplication. It's essentially a modularization of [ress](https://github.com/filipelinhares/ress) with some enhancements borrowed from [modern-normalize](https://github.com/sindresorhus/modern-normalize). If you're initiating a new project that doesn't require legacy browser support or won't utilize Web Components, consider using [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
-[![Build Status](https://travis-ci.org/filipelinhares/ress.svg?branch=master)](https://travis-ci.org/filipelinhares/ress) [![Size](https://img.shields.io/bundlephobia/min/ress?color=orange)](https://github.com/filipelinhares/ress/blob/master/dist/ress.min.css) [![npm](https://img.shields.io/npm/v/ress.svg)](https://npmjs.com/ress)
-
-## Installation
-
-```sh
-npm install --save ress
-```
-
-or
-
-```sh
-yarn add ress
-```
+For more details, check out:
+- [normalize.css](https://github.com/necolas/normalize.css)
+- [normalize.css Know Issues](https://github.com/necolas/normalize.css#extended-details-and-known-issues)
+- [modern-normalize](https://github.com/sindresorhus/modern-normalize)
 
 ## Features
 
-1. Apply `box-sizing: border-box;` in all elements.
-2. Reset `padding` and `margin` in all elements.
-3. Specify `background-repeat: no-repeat` in all elements and pseudo elements.
-4. Inherit `text-decoration` and `vertical-align` to `::before` and `::after`.
-5. Remove the `outline` when hovering in all browsers.
-6. Specify `font-family: monospace` in code elements.
-7. Reset `border-radius` in input elements.
-8. Specify font inheritance of form elements.
-9. Remove the default button styling in all browsers.
-10. Specify textarea resizability to vertical.
-11. Apply `cursor: pointer` to button elements.
-12. Apply `tab-size: 4` in `html`.
-13. Style `select` like a standard input.
-14. Style `cursor` by aria attributes.
+1. Consistent: Ensures uniform styles across various browsers.
+    1.1 Apply `box-sizing: border-box;`, resets padding, and margin.
+    1.1 Improve font consistency.
+    1.1 Form styles standardization.
+3. Lightweight: Only 1kb (min+gzip).
+3. Fully modular: Take what you want.
+4. No bundler required: Usable via CDN.
 
-## Shadow DOM reset
-Inspired by [JIAYI HU's blog post](https://blog.jiayihu.net/css-resets-in-shadow-dom/) about resets in shadow DOM, now you can import just what you want from ress.
+## Install
 
-### Using
-
-**With `postcss-import` for example:**
+```sh
+npm install modress
 ```
-@import `ress/shadow/a;
-@import `ress/shadow/button;
-```
-
-## Crossbrowser
-
-**ress** uses [Normalize.css](https://github.com/necolas/normalize.css) under the hood with some customizations to apply a solid base to start your stylesheet.
 
 ## Browser support
 
@@ -54,27 +29,6 @@ Inspired by [JIAYI HU's blog post](https://blog.jiayihu.net/css-resets-in-shadow
 - Edge
 - Firefox ESR+
 - Internet Explorer 10+
-- Opera
 - Safari 8+
+- Opera
 
-## CDN
-
-[**unpkg**](https://unpkg.com)
-
-```sh
-https://unpkg.com/ress/dist/ress.min.css
-```
-
-[**jsDevlivr**](https://www.jsdelivr.com/)
-
-```sh
-# Production
-https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css
-
-# Development
-https://cdn.jsdelivr.net/gh/filipelinhares/ress@latest/dist/ress.min.css
-```
-
-## License
-
-[MIT](LICENSE.md) © Filipe Linhares
