@@ -24,6 +24,21 @@ For more details, check out:
 npm install modress
 ```
 
+## Usage
+
+```css
+/* app.css */
+@import 'modress/dist/modress.min.css';
+```
+
+For usage with Web Components, import individual styles:
+
+```css
+/* my-button.css */
+@import 'modress/dist/base.css';
+@import 'modress/dist/button.css';
+```
+
 ## Browser support
 
 - Chrome
