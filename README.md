@@ -28,7 +28,7 @@ npm install modress
 
 ```css
 /* app.css */
-@import 'modress/dist/modress.min.css';
+@import 'modress';
 ```
 
 For usage with Web Components, import individual styles:
